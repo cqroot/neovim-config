@@ -70,7 +70,10 @@ call plug#begin(expand('<sfile>:p:h:h').'/plugged')
 " Other {
 "     Plug 'vim-airline/vim-airline'
     Plug 'preservim/nerdcommenter'
+
     Plug 'Yggdroot/indentLine'
+    autocmd FileType markdown let g:indentLine_enabled=0
+
     Plug 'ryanoasis/vim-devicons'
     Plug 'sheerun/vim-polyglot'
     " Plug 'ap/vim-css-color'
