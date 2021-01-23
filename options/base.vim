@@ -92,8 +92,10 @@ set listchars=tab:›\ ,trail:■,extends:#,nbsp:.
 
 " Wildmenu
 set wildmenu
-" 输入命令时按Tab显示候选列表，再按一次选择
-set wildmode=longest:full,full
+if !has('nvim')
+  " 输入命令时按Tab显示候选列表，再按一次选择
+  set wildmode=longest:full,full
+endif
 
 " number
 " 行号
@@ -106,4 +108,14 @@ set cursorline
 " 高亮当前列，开启会使光标移动卡顿
 " set cursorcolumn
 
-set termguicolors
+" This is only necessary if you use "set termguicolors".
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+
+" fixes glitch? in colors when using vim with tmux
+set background=dark
+set t_Co=256
+
+if exists('+termguicolors')
+  set termguicolors
+endif
