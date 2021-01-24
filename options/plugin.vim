@@ -8,6 +8,8 @@ call plug#begin(expand('<sfile>:p:h:h').'/plugged')
 
 " " Finder {
 "     Plug 'Yggdroot/LeaderF'
+    Plug 'junegunn/fzf'
+    Plug 'junegunn/fzf.vim'
 " " }
 
 " Sidebar {
@@ -72,6 +74,7 @@ call plug#begin(expand('<sfile>:p:h:h').'/plugged')
     Plug 'preservim/nerdcommenter'
 
     Plug 'Yggdroot/indentLine'
+    autocmd TermOpen * IndentLinesDisable
     autocmd FileType markdown let g:indentLine_enabled=0
 
     Plug 'ryanoasis/vim-devicons'
@@ -81,6 +84,7 @@ call plug#begin(expand('<sfile>:p:h:h').'/plugged')
     Plug 'rbgrouleff/bclose.vim'
     Plug 'francoiscabrol/ranger.vim'
     " let g:ranger_map_keys = 0
+    Plug 'vifm/vifm.vim'
 
     Plug 'voldikss/vim-translator'
     nmap <silent> <Leader>w <Plug>TranslateW
