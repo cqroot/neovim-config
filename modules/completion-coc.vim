@@ -17,7 +17,6 @@ if index(g:plugs_order, 'coc.nvim') >= 0
                 \ 'coc-stylelint',
                 \ 'coc-stylelintplus',
                 \ 'coc-snippets',
-                \ 'coc-template',
                 \ 'coc-yaml',
                 \ 'coc-vetur']
 

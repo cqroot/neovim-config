@@ -87,6 +87,7 @@ call plug#begin(expand('<sfile>:p:h:h').'/plugged')
     vmap <silent> <Leader>w <Plug>TranslateWV
 
     Plug 'cqroot/vim-rsync'
+    let g:vim_rsync_sync_on_save = 1
 
 "     Plug 'skywind3000/vim-quickui'
 
