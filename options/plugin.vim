@@ -6,17 +6,14 @@ call plug#begin(expand('<sfile>:p:h:h').'/plugged')
     Plug 'morhetz/gruvbox'
 " }
 
-" " Finder {
+" Finder {
 "     Plug 'Yggdroot/LeaderF'
     Plug 'junegunn/fzf'
     Plug 'junegunn/fzf.vim'
-" " }
+" }
 
 " Sidebar {
-"     Plug 'preservim/nerdtree', { 'on': 'NERDTree' }
-"     Plug 'Xuyuanp/nerdtree-git-plugin'
     Plug 'liuchengxu/vista.vim'
-"     Plug 'preservim/tagbar'
 " }
 
 " StatusLine {
@@ -69,31 +66,32 @@ call plug#begin(expand('<sfile>:p:h:h').'/plugged')
     " let g:ale_linters = {'python': ['pylint', 'pycodestyle']}
 " }
 
+" Fm {
+    Plug 'vifm/vifm.vim'
+    if has('nvim')
+        Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
+    else
+        Plug 'Shougo/defx.nvim'
+        Plug 'roxma/nvim-yarp'
+        Plug 'roxma/vim-hug-neovim-rpc'
+    endif
+" }
+
 " Other {
-"     Plug 'vim-airline/vim-airline'
     Plug 'preservim/nerdcommenter'
+    Plug 'ryanoasis/vim-devicons'
+    Plug 'sheerun/vim-polyglot'
+    " Plug 'ap/vim-css-color'
+
+    Plug 'voldikss/vim-translator'
+    Plug 'cqroot/vim-rsync'
+    let g:vim_rsync_sync_on_save = 1
 
     Plug 'Yggdroot/indentLine'
     autocmd TermOpen * IndentLinesDisable
     autocmd FileType markdown let g:indentLine_enabled=0
 
-    Plug 'ryanoasis/vim-devicons'
-    Plug 'sheerun/vim-polyglot'
-    " Plug 'ap/vim-css-color'
-
-    Plug 'francoiscabrol/ranger.vim'
-    " let g:ranger_map_keys = 0
-    Plug 'vifm/vifm.vim'
-
-    Plug 'voldikss/vim-translator'
-    nmap <silent> <Leader>w <Plug>TranslateW
-    vmap <silent> <Leader>w <Plug>TranslateWV
-
-    Plug 'cqroot/vim-rsync'
-    let g:vim_rsync_sync_on_save = 1
-
 "     Plug 'skywind3000/vim-quickui'
-
 "     Plug 'ludovicchabant/vim-gutentags'
 " }
 
