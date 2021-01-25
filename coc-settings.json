@@ -1,4 +1,16 @@
 {
     "explorer.icon.enableNerdfont": true,
-    "python.pythonPath": "python2"
+    "python.pythonPath": "python2",
+    "python.linting.enabled": false,
+    "diagnostic-languageserver.filetypes": {
+        "python": "flake8",
+        "vim": "vint",
+        "markdown": [ "write-good", "markdownlint" ],
+        "sh": "shellcheck"
+    },
+    "diagnostic-languageserver.formatFiletypes": {
+        "python": "black",
+        "lua": "lua-format",
+        "sh": "shfmt"
+    }
 }

@@ -1,5 +1,6 @@
 if index(g:plugs_order, 'coc.nvim') >= 0
     let g:coc_global_extensions = [
+                \ 'coc-diagnostic',
                 \ 'coc-python',
                 \ 'coc-vimlsp',
                 \ 'coc-explorer',

@@ -81,7 +81,6 @@ call plug#begin(expand('<sfile>:p:h:h').'/plugged')
     Plug 'sheerun/vim-polyglot'
     " Plug 'ap/vim-css-color'
 
-    Plug 'rbgrouleff/bclose.vim'
     Plug 'francoiscabrol/ranger.vim'
     " let g:ranger_map_keys = 0
     Plug 'vifm/vifm.vim'
