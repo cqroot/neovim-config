@@ -1,7 +1,6 @@
 if index(g:plugs_order, 'coc.nvim') >= 0
     let g:coc_global_extensions = [
                 \ 'coc-diagnostic',
-                \ 'coc-python',
                 \ 'coc-vimlsp',
                 \ 'coc-explorer',
                 \ 'coc-sh',
@@ -19,6 +18,8 @@ if index(g:plugs_order, 'coc.nvim') >= 0
                 \ 'coc-stylelintplus',
                 \ 'coc-snippets',
                 \ 'coc-yaml',
+                \ 'coc-fzf-preview',
+                \ 'coc-pyright',
                 \ 'coc-vetur']
 
     " TextEdit might fail if hidden is not set.

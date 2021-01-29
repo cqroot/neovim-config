@@ -3,10 +3,6 @@
     "explorer.width" : 30,
     "explorer.icon.enableNerdfont": true,
 
-    // python
-    "python.pythonPath": "python2",
-    "python.linting.enabled": false,
-
     // diagnostic
     "diagnostic-languageserver.filetypes": {
         "python": "flake8",

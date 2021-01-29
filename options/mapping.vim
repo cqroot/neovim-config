@@ -43,6 +43,10 @@ endfunc
 
 " Terminal {
     tnoremap <Esc> <C-\><C-n>
+
+    nnoremap <silent> <A-=> :bo vsplit \| terminal<CR>
+    nnoremap <silent> <A--> :bo split \| terminal<CR>
+
     tnoremap <A-h> <C-\><C-N><C-w>h
     tnoremap <A-j> <C-\><C-N><C-w>j
     tnoremap <A-k> <C-\><C-N><C-w>k
@@ -62,4 +66,9 @@ endfunc
     nmap <silent> <Leader>w <Plug>TranslateW
     vmap <silent> <Leader>w <Plug>TranslateWV
     nmap <silent> <C-l> <Plug>(coc-format)
+    " nmap <silent> <A-f> :FZF<CR>
+    " nmap <silent> <A-r> :Rg<CR>
+    nmap <silent> <A-f> :<C-u>CocCommand fzf-preview.ProjectFiles<CR>
+    nmap <silent> <A-r> :<C-u>CocCommand fzf-preview.ProjectGrep<CR>
+    nmap <silent> <A-s> :RsyncAndRun<CR>
 " }

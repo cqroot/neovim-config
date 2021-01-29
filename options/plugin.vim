@@ -35,6 +35,7 @@ call plug#begin(expand('<sfile>:p:h:h').'/plugged')
 
 " Completion-Coc {
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'honza/vim-snippets'
 " }
 
 " Completion-ncm2 {
