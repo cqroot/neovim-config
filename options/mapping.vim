@@ -69,6 +69,6 @@ endfunc
     " nmap <silent> <A-f> :FZF<CR>
     " nmap <silent> <A-r> :Rg<CR>
     nmap <silent> <A-f> :<C-u>CocCommand fzf-preview.ProjectFiles<CR>
-    nmap <silent> <A-r> :<C-u>CocCommand fzf-preview.ProjectGrep<CR>
+    nmap <silent> <A-r> :<C-u>CocCommand fzf-preview.ProjectGrep .<CR>
     nmap <silent> <A-s> :RsyncAndRun<CR>
 " }

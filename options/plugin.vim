@@ -68,7 +68,6 @@ call plug#begin(expand('<sfile>:p:h:h').'/plugged')
 " }
 
 " Fm {
-    Plug 'vifm/vifm.vim'
     if has('nvim')
         Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
     else
