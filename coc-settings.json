@@ -8,7 +8,8 @@
         "python": "flake8",
         "vim": "vint",
         "markdown": [ "write-good", "markdownlint" ],
-        "sh": "shellcheck"
+        "sh": "shellcheck",
+        "cpp": "cpplint"
     },
     "diagnostic-languageserver.formatFiletypes": {
         "python": "black",

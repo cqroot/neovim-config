@@ -3,6 +3,7 @@ if index(g:plugs_order, 'coc.nvim') >= 0
                 \ 'coc-diagnostic',
                 \ 'coc-vimlsp',
                 \ 'coc-explorer',
+                \ 'coc-clangd',
                 \ 'coc-sh',
                 \ 'coc-emmet',
                 \ 'coc-html',
