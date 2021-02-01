@@ -75,6 +75,8 @@ call plug#begin(expand('<sfile>:p:h:h').'/plugged')
         Plug 'roxma/nvim-yarp'
         Plug 'roxma/vim-hug-neovim-rpc'
     endif
+    Plug 'rbgrouleff/bclose.vim'
+    Plug 'francoiscabrol/ranger.vim'
 " }
 
 " Other {
