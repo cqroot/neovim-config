@@ -62,13 +62,22 @@ endfunc
 " }
 
 " Plugin {
+    " defx
     nmap <leader>f :Defx<CR>
+
+    " translate
     nmap <silent> <Leader>w <Plug>TranslateW
     vmap <silent> <Leader>w <Plug>TranslateWV
-    nmap <silent> <C-l> <Plug>(coc-format)
-    " nmap <silent> <A-f> :FZF<CR>
-    " nmap <silent> <A-r> :Rg<CR>
+
+    " rnvimr
+    nnoremap <silent> <M-o> :RnvimrToggle<CR>
+    tnoremap <silent> <M-o> <C-\><C-n>:RnvimrToggle<CR>
+
+    " coc.nvim
     nmap <silent> <A-f> :<C-u>CocCommand fzf-preview.ProjectFiles<CR>
     nmap <silent> <A-r> :<C-u>CocCommand fzf-preview.ProjectGrep .<CR>
+    nmap <silent> <C-l> <Plug>(coc-format)
+
+    " vim-rsync
     nmap <silent> <A-s> :RsyncAndRun<CR>
 " }
