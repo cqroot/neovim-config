@@ -9,8 +9,8 @@ let mapleader = " "
 " Emacs-like keymap {
     cnoremap <C-a> <Home>
     cnoremap <C-e> <End>
-    cnoremap <C-p> <Up>
-    cnoremap <C-n> <Down>
+    " cnoremap <C-p> <Up>
+    " cnoremap <C-n> <Down>
     cnoremap <C-b> <Left>
     cnoremap <C-f> <Right>
     cnoremap <M-b> <S-Left>
@@ -66,8 +66,8 @@ endfunc
     nmap <leader>f :Defx<CR>
 
     " translate
-    nmap <silent> <Leader>w <Plug>TranslateW
-    vmap <silent> <Leader>w <Plug>TranslateWV
+    nmap <silent> <A-w> <Plug>TranslateW
+    vmap <silent> <A-w> <Plug>TranslateWV
 
     " rnvimr
     nnoremap <silent> <M-o> :RnvimrToggle<CR>
