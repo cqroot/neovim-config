@@ -9,7 +9,8 @@
         "vim": "vint",
         "markdown": [ "write-good", "markdownlint" ],
         "sh": "shellcheck",
-        "cpp": "cpplint"
+        "cpp": "cpplint",
+        "go": "golangci-lint"
     },
     "diagnostic-languageserver.formatFiletypes": {
         "python": "black",

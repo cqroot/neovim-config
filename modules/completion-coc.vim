@@ -10,6 +10,7 @@ if index(g:plugs_order, 'coc.nvim') >= 0
                 \ 'coc-css',
                 \ 'coc-prettier',
                 \ 'coc-tsserver',
+                \ 'coc-go',
                 \ 'coc-json',
                 \ 'coc-eslint',
                 \ 'coc-git',

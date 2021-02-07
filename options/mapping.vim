@@ -38,6 +38,9 @@ function! RunScript()
     elseif &filetype == 'vim'
         exec "w"
         exec "source %"
+    elseif &filetype == 'go'
+        exec "w"
+        exec "!go run %"
     endif
 endfunc
 
